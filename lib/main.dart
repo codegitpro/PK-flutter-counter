@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
+// import 'package:http/http.dart' as http;
 
 void main() {
   runApp(MyApp());
@@ -34,6 +35,12 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+// class GetData {
+//   Future<http.Response> fetchData(http.Client client) async {
+//     return client.get('http://jsonplaceholder.typicode.com/photos');
+//   }
+// }
 
 class CounterStorage {
   Future<String> get _localPath async {
