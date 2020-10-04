@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
         // This makes the visual density adapt to the platform that you run
         // the app on. For desktop platforms, the controls will be smaller and
         // closer together (more dense) than on mobile platforms.
@@ -97,12 +97,17 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            ListTile(
+              leading: Icon(Icons.block),
+              title: Text('Android'),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            ListTile(
+              leading: Icon(Icons.alarm),
+              title: Text('One-line with leading widget'),
+            ),
+            ListTile(
+              leading: Icon(Icons.event_seat),
+              title: Text('One-line with leading widget'),
             ),
           ],
         ),
